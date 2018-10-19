@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/forget.css"/>
+		<title>ResetPassword</title>
+	</head>
+	<body>
+		<div class="forget-max">
+			<div class="forget-box">
+				<div class="forget-logo">
+					<img src="img/milogo.png"/>
+				</div>
+				<div class="forget-name">
+					<h4>重置密码</h4>
+				</div>
+				<form action="login.html" >
+					<div class="forget-form">
+						<h5>请输入注册的邮箱地址、手机号码或小米帐号：</h5>
+						<div class="forget-user">
+							<label for="user">
+								<input type="text" value="" placeholder="邮箱/手机号码/小米帐号"/>
+							</label>
+						</div>
+						<div class="forget-yz">
+							<label for="user">
+								<input type="text" value="" placeholder="图片验证码"/>
+							</label>
+							<div id="v_container" style="width: 130px;height: 42px;margin-left:10px;float: left;"></div>
+						</div>
+						<div class="forget-help">
+     					   	用户输入手机号码时请正确选择区域前缀，如：台湾：+8869*******，香港：+8526*******
+        					<a class="" href="javascript:void(0)">帮助</a>
+						</div>
+						<div class="forget-btn">
+							<input type="submit" name="" id="" value="下一步" />
+						
+						</div>
+					</div>
+				<!--	<input type="submit" value=""/>-->
+				</form>
+			</div>
+		
+		</div>
+			<div class="forget-footer">
+				<ul>
+					<li><a href="#">简体&nbsp;&nbsp;&nbsp;|</a></li>
+					<li><a href="#">繁体&nbsp;&nbsp;&nbsp;|</a></li>
+					<li><a href="#">English&nbsp;&nbsp;&nbsp;|</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+				<p>小米公司版权所有-京ICP备10046444-<a href="#"><img src="img/ghs.png"/></a>京公网安备11010802020134号-京ICP证110507号</p>
+			</div>
+			<script src="js/gVerify.js" type="text/javascript" charset="utf-8"></script>
+			<script>
+				var verifyCode = new GVerify("v_container");
+		
+			</script>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+
+ol, ul ,li{
+	list-style: none;
+}
+body{
+		background: #f9f9f9;
+}
+.forget-max{
+	position: relative;
+	min-height: 100%;
+	display: -webkit-box;
+	width: 100%;
+
+}
+.in_hdNavRight .in_last:hover a{
+	color:#ff6700;
+}
+.forget-box{
+	padding-bottom: 30px;
+	width: 854px;
+	background:#fff;
+	margin: 150px auto 0;
+}
+.forget-logo{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.forget-name{
+	
+	font-size: 30px;
+	text-align: center;
+}
+.forget-name>h4{
+	font-weight: normal;
+}
+.forget-form{
+	width: 336px;
+	padding: 30px 0;
+	margin: 0 auto;
+
+}
+.forget-form>h5{
+	color: #666;
+		margin: 10px 0 20px;
+}
+.forget-user{
+	padding-bottom: 15px;
+}
+.forget-user input{
+	/*outline: none;*/
+	height: 20px;
+	padding: 10px;
+	width: 316px;
+	border: 1px solid rgba(186,186,186,0.3);
+}
+.forget-yz{
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+.forget-yz input{
+	float: left;
+	width: 170px;
+	height: 20px;
+	padding: 10px;
+	border: 1px solid rgba(186,186,186,0.3);
+}
+.forget-help{
+	line-height: 26px;
+	font-size: 14px;
+	color: #c5c5c5;
+}
+
+.forget-help>a{
+	float: right;
+}
+.forget-btn{
+	margin-top: 15px;
+}
+.forget-btn input{
+	width: 336px;
+	height: 42px;
+	background: #ff6700;
+	outline: none;
+	border: none;
+	color: white;
+}
+.forget-footer{
+	margin-top: 200px;
+	text-align: center;
+	width: 100%;
+}
+.forget-footer ul li{
+	padding: 0 6px;
+	display: inline-block;
+}
+.forget-footer ul li a{
+	font-size: 14px;
+		color: #333;
+	text-decoration: none;
+}
+.forget-footer p{
+	font-size: 14px;
+	padding: 10px;
+	color: #9d9d9d;
+}
+.forget-footer p img{
+	vertical-align: middle;
+}

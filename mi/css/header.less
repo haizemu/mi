@@ -1,0 +1,387 @@
+
+//变量声明区域
+@cl1:#B0B0B0;//灰白色
+@cl2:#333;//黑色
+@cl3:#FF6700;//黄色
+@cl4:#fff;//白色
+@ft5:14px/1.5;
+@a_width:1226px;
+
+
+//公共函数区域
+.after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.before{
+     content: "";
+    display: table;
+}
+
+.nav_min_f(@mr){
+        ul{
+            list-style: none;
+            :after{
+                .after;
+            }
+            li{
+                float: left;
+                color: @cl4;
+                padding: 0 @mr;
+               a{
+                   display:inline-block;
+                   width: 100%;
+                   line-height: 10px;
+                   color: @cl1;
+                   margin: 0 3px;
+                   border-right: 1px solid #42423F;
+                   text-decoration: none;
+               } 
+               a:hover{
+                    color:@cl4;
+                 }
+            }
+            
+        }
+    }
+ 
+    .fnavf(@letf){//fnav的hover
+            position: absolute;
+            left: @letf;
+            top: 0;
+            display: inline-block;
+            width: 115px;
+            height: 55px;
+        }
+
+//主体内容区域
+nav{
+    width: 100%;
+    background: @cl2;
+}
+
+
+
+.nav_max{
+    width: @a_width;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: @ft5;
+    .nav_min_a{
+        float: left;
+        .nav_min_f(3px);
+    }
+    .nav_min_b{
+        text-align: left;
+        float: right;
+        .nav_min_f(10px);
+        a{
+            margin: 0 12px !important;
+        }
+    }
+    
+}
+
+.xz{
+    position: relative;
+    .tck{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: -30px;
+        width: 130px;
+        padding:0 0 5px 0 ;
+        background:@cl4;
+        text-align: center;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+        img{
+            margin: 15px auto 0;
+            width: 80%;
+            vertical-align: top;
+        }
+        span{
+            position: absolute;
+            display: inline-block;
+            top:-20px;
+            right: 52px;
+            border: 10px solid transparent;
+            border-bottom-color:@cl4 ;
+        }
+    }
+    .tck:hover{
+        display: none;
+    }
+}
+ 
+.xz:hover a{
+    color: @cl4 !important;
+}
+.xz:hover .tck{
+    display: block;
+}
+.hv1{
+    position: relative;
+}
+.hv1:hover{
+    background: @cl4;
+    a.yh{
+        color:@cl3 !important;
+    }
+    a.yh:hover{
+        color:@cl3 !important;
+    }
+}
+.us_hv{
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top:40px;
+    color: #000;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+    li{
+        display:block;
+        width: 110px;
+        text-align: center;
+        padding: 0 !important;
+        line-height: 30px;
+    }
+    a{
+        margin: 0 !important;
+        color: #333 !important;
+        border-right:none !important;
+    }
+    li:hover{
+        background: #f1f1f1;
+        a{
+          color:@cl3 !important;
+        }
+    }
+    a:hover{
+        color:@cl3 !important;
+    }
+    :hover{
+        .hv1{
+        color:@cl3 !important;
+    }
+    }
+    
+}
+
+.gwc:hover{
+    background:@cl4 !important;
+    a.gwc_a{
+        color:@cl3 !important;
+    }
+    a.gwc_a:hover{
+        color:@cl3 !important;
+    }
+}
+.gwc{
+    position: relative;
+    .gwc_ul{
+        background: #fff;
+        display: none;
+        left: -219px;
+        top: 40px;
+        position: absolute;
+        width: 336px;
+        height: 100px;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+        p{
+            text-align: center;
+            width: 100%;
+            line-height: 100px;
+            color:@cl2;
+        }
+    }
+}
+
+.fnav{
+    width: @a_width;
+    height: 100px;
+    margin: 0 auto;
+    .logo_img{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow:hidden ;
+        width: 55px;
+        height: 55px;
+        margin-top: 23px;
+        background:@cl3;
+         a.img_a{
+             transition: all 0.2s;
+             .fnavf(-55px);
+         }
+        img{
+            width:55px;
+            height: 55px;
+            vertical-align: middle;
+        }
+        
+    }
+    >ul{
+         margin-top: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        margin-left: 40px;
+        >li{
+            
+            display: inline-block;
+            padding:23px 8px ;
+            line-height: 55px;
+            >a{
+                color: #000;
+            }
+            >a:hover{
+                color: @cl3;
+            }
+        }
+    }
+    .search{
+        position: relative;
+        margin-top: 25px;
+        float: right;
+        width: 296px;
+        height: 47px;
+        border: 1px solid #ccc;
+        input{
+            width: 225px;
+            height: 47px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+            padding: 0 10px;
+            background: transparent;
+        }
+        button{
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            transition: all 0.3s;
+            background:#fff;
+            border: none;
+            outline: none;
+            border-left: 1px solid #ccc;
+            width: 52px;
+            height: 47px;
+            top: 0;
+            color: #666;
+            font-size: 18px;
+            right: 0;
+        }
+        .s_a{
+            position: absolute;
+            right: 52px;
+            top:14px;
+            display: inline-block;
+            >a{
+                transition: all 0.3s;
+                font-size: 12px;
+                color: #333;
+                padding: 2px;
+                margin: 0 10px 0 0;
+                background: #f1f1f1;
+            }
+            >a:first-child{
+                margin: 0;
+            }
+        }
+        button:hover{
+            color: #fff;
+            background:@cl3;
+        }
+        .s_a>a:hover{
+            color: #fff;
+             background:@cl3;
+        }
+        .s_index{
+            display: none;
+            position: absolute;
+            left: -1px;
+            top: 47px;
+            line-height: 28px !important;
+            border:1px solid @cl3;
+            ul{
+                width: 244px !important;
+                li{
+                    font-size: 14px;
+                    width:204px !important;
+                    height: 28px;
+                    padding: 0 20px;
+                    a{
+                        color: #000;
+                        float: left;
+                    }
+                    span{
+                        color: #666;
+                        float: right;
+                    }
+                    
+                }
+                li:before{
+                    .before;
+                }
+                li:hover{
+                    background: #f1f1f1;
+                }
+            }
+        }
+      
+    }
+   
+}
+.search:hover{
+            border-color:#bbb;
+            button{
+                border-left-color: #bbb;
+            }
+        }
+.fnav:before{
+    .before;
+}
+.logo_img:hover{
+    a.img_a{
+             .fnavf(0);
+         }
+}
+.shop{
+    background: #fff;
+    position: absolute;
+    left: -97px;
+    top:100px;
+    width: 230px;
+    height: 460px;
+    border:1px solid @cl3;
+    ul{
+        padding: 20px 0;
+        li{
+            padding: 0 18px;
+            width: 192px;
+            line-height: 42px;
+            font-size:14px ;
+            i{
+                margin-top: 14px;
+                float: right;
+                font-size: 18px;
+            }
+            .fda{
+                background: #00007D;
+                position:absolute;
+                width: 993px;
+                height: 460px;
+                left: 232px;
+                top: -21px;
+            }
+        }
+        li:hover{
+            background: @cl3;
+            color: #fff;
+        }
+    }
+}

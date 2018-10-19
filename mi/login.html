@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<a href="index.html" class="mi_logo pr">
+					<span class="mi_logo_img fl inb">
+						<img src="img/mmm.png"/>
+					</span>
+					<p class="f34">小米商城</p>
+					<p class="f12">让每个人都能享受科技的乐趣</p>
+				</a>
+			</div>
+			<div class="login_panel pr">
+				<div class="mainbox pa">
+					<div class="login_way">
+						<span><a href="#" class="f24 active">账号登录</a></span><span class="f24 line inb">|</span><span><a href="#" class="f24">扫码登录</a></span>
+					</div>
+					<div class="type typeOne">
+						<form action="index.html"  id="form_one">
+							<div class="user_div">
+								<input class="inp_one" type="text" name="user" id="username_one" value="" placeholder="邮箱/手机号码/小米ID" />
+							</div>
+							<div class="psd_div">
+								<input class="inp_one" type="password" name="psd" id="password_one" value="" placeholder="密码" />
+							</div>
+							<div class="form_tips">
+								<span class="circle inb">!</span>
+								<span class="mc tip_text"></span>
+							</div>
+							<div class="login">
+								<!--<a href="index.html"><input class="bgc" type="submit" value="登录"/></a>-->
+							<input class="bgc" type="submit" value="登录"/>
+							</div>
+						</form>
+						<div class="other clearfix">
+							<div class="fl"><a href="#" class="mc sms_login">手机短信登录/注册</a></div>
+							<div class="fr rt">
+								<span><span><a href="zc.html">立即注册</a></span>
+								<span>|</span>
+								<span><a href="forget.html">忘记密码？</a></span></span>
+							</div>
+						</div>
+						<div class="other_login_type">
+							<fieldset id="">
+								<legend>其他登录方式</legend>
+							</fieldset>
+							<div class="other_link">
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=100284651&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_qq"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=2996826273&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_weibo"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=2088011127562160&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_alipay"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=wxxmzh&scope=snsapi_login&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_wechat"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="type typeTwo">
+						<div class="erweima">
+							<img src="img/2v.png"/>
+						</div>
+						<p>使用 <span class="mc">小米商城APP</span>扫一扫</p>
+						<p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+						
+					</div>
+					<div class="type typeThree">
+						<form action="#" method="post" id="form_three">
+							<div class="user_div pr">
+								<div class="country_code pa">
+									<span>+86</span>
+								</div>
+								<input class="inp_three" type="tel" autocomplete="off" name="user" id="username_three" value="" placeholder="邮箱/手机号码/小米ID" />
+							</div>
+							<div class="psd_div pr">
+								<input class="inp_three" type="number" autocomplete="off" name="psd" id="sms_code_three" value="" placeholder="短信验证码" />
+								<div class="sms_code pa">
+									<a class="get_sms_code" href="#">获取验证码</a>
+								</div>
+							</div>
+							<div class="form_tips">
+								<span class="circle inb">!</span>
+								<span class="mc tip_text_three"></span>
+							</div>
+							<div class="login">
+								<input class="bgc" type="submit" value="立即登录/注册"/>
+							</div>
+						</form>
+						<div class="other clearfix">
+							<div class="fl"><a href="#" class="mc psd_login">用户名密码登录</a></div>
+						</div>
+						<div class="other_login_type">
+							<fieldset id="">
+								<legend>其他登录方式</legend>
+							</fieldset>
+							<div class="other_link">
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=100284651&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_qq"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=2996826273&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_weibo"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=2088011127562160&&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_alipay"></i></a>
+								<a href="https://account.xiaomi.com/pass/sns/login/auth?appid=wxxmzh&scope=snsapi_login&callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop">
+									<i class="icon_wechat"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="foot_link">
+					<ul class="">
+						<li><a href="#">简体</a>|</li>
+						<li><a href="#">繁体</a>|</li>
+						<li><a href="#">English</a>|</li>
+						<li><a href="#">常见问题</a>|</li>
+						<li><a href="#">隐私政策</a></li>
+					</ul>
+				</div>
+				<p class="copy">小米公司版权所有-京ICP备10046444- <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><img class="ghs" src="img/ghs.png"/>京公网安备11010802020134号</a>
+					-京ICP证110507号
+				</p>
+			</footer>
+		</div>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/login.js" type="text/javascript"></script>
+	</body>
+</html>

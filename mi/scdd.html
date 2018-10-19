@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/scdd_iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/city-picker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/scdd.css"/>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/city-picker.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/city-picker.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="scdd_header">
+			<div class="scdd_container clear">
+				<div class="scdd_header_logo">
+					<a href="index.html" class="scdd_imghome">
+						<img src="img/mi-home.png" />
+					</a>
+					<img src="img/mi-logo.png"/  class="scdd_imglogo">
+				</div>
+				<h2>确认订单</h2>
+				<div class="scdd_list">
+					<div class="scdd_list_userName">
+						<a href="#">米兔君</a>
+						<span class="iconfont icon-insta360logo13"></span>
+						<ul class="scdd_list_ul">
+							<li><a href="index_grzx.html">个人中心</a></li>
+							<li><a href="#">评价晒单</a></li>
+							<li><a href="#">我的喜欢</a></li>
+							<li><a href="#">小米账户</a></li>
+							<li><a href="login.html">退出登录</a></li>
+						</ul>
+					</div>
+					<span class="scdd_line">|</span>
+					<div class="scdd_header_right">
+						<a href="wddd.html">我的订单</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scdd_page">
+			<div class="scdd_checkbox">
+				<div class="scdd_address">
+					<div class="scdd_section_header">
+						收货地址
+					</div>
+					<div class="scdd_max clear">
+						<div class="scdd_section_body">
+							<i class="iconfont icon-jiahao"></i>
+							添加新地址
+						</div>
+					</div>
+					
+				</div>
+				<div class="scdd_goods">
+					<div class="scdd_section_header">
+						商品及优惠券
+						<div class="scdd_shopcar">
+							<a href="gwc.html">返回购物车<img src="img/right.png"/></a>
+						</div>
+					</div>
+					<ul class="scdd_goods_list">
+						<li class="clear">
+							<div class="scdd_col_img">
+								<img src="img/pms_1537323963.1278763!30x30.jpg"/>
+							</div>
+							<div class="scdd_col_name">
+								<a href="#">小米8 青春 全网通版 4GB内存 深空灰 64GB</a>
+							</div>
+							<div class="scdd_col_price">
+								<span class="scdd_goods_price">1399</span>元 x
+								<span class="scdd_goods_number">1</span>
+							</div> 
+							<div class="scdd_col_status">
+								
+							</div>
+							<div class="scdd_col_total">
+								<span>1399</span>元
+							</div>
+						</li>
+						<li class="clear">
+							<div class="scdd_col_img">
+								<img src="img/pms_1539593530.23152746!30x30.jpg"/>
+							</div>
+							<div class="scdd_col_name">
+								<a href="#">小米超级流量卡<em class="label">赠品</em></a>
+								
+							</div>
+							<div class="scdd_col_price">
+								<span class="scdd_goods_price">0</span>元 x
+								<span class="scdd_goods_number">1</span>
+							</div> 
+							<div class="scdd_col_status">	
+							</div>
+							<div class="scdd_col_total">
+								<span>0</span>元
+							</div>
+						</li>
+					</ul>
+					<div class="scdd_shipment clear">
+						<div class="scdd_psfs">
+							配送方式
+						</div>
+						<div class="scdd_by">
+							包邮
+						</div>
+					</div>
+					<div class="scdd_shipment scdd_fp clear">
+						<div class="scdd_psfs">
+							发票
+						</div>
+						<div class="scdd_by clear">
+							<div>
+								电子发票
+							</div>
+							<div>
+								个人
+							</div>
+							<div>
+								商品明细
+							</div>
+							<div class="fp_change">
+								<a href="#">修改 ></a>
+							</div>
+						</div>
+					</div>
+					<div class="scdd_count clear">
+						<div class="scdd_action">
+							<div class="scdd_trigger">
+								<i class="iconfont icon-jiahao"></i>使用优惠券
+								<div class="scdd_couponBox scdd_codeBox">
+									<ul class="scdd_tabswitch clear">
+										<li class="scdd_tabactive" sq="0">选择优惠券</li>
+										<li sq="1">输入优惠券码</li>
+									</ul>
+									<div class="scdd_tabcontent">
+										您暂时没有可用的优惠券
+									</div>
+									<form class="scdd_codecontent">
+										<div class="scdd_formSection">
+											<label class="scdd_code">请输入优惠券码</label>
+											<input type="text" name="code" id="scdd_code" autocomplete="off"/>
+										</div>
+										<div class="scdd_confirm">
+											<div class="scdd_btn">
+												立即使用
+											</div>
+											<div class="scdd_btn scdd_cancle">
+												不使用优惠券
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="scdd_trigger">
+								<i class="iconfont icon-jiahao"></i>使用小米礼品卡
+								<div class="scdd_couponBox scdd_ecardBox">
+									<ul class="scdd_tabswitch clear">
+										<li class="scdd_tabactive" sq="0">已绑定的优惠卡</li>
+										<li sq="1">输入礼品卡以绑定</li>
+									</ul>
+									<div class="scdd_tabcontent">
+										<p>没有发现可用的礼品卡!</p>
+										<div class="scdd_confirm">
+											<div class="scdd_btn scdd_cancle">
+												取消
+											</div>
+										</div>
+									</div>
+									<form class="scdd_codecontent">
+										<div class="scdd_formSection">
+											<label class="scdd_ecard">密码:</label>
+											<input type="text" name="code" id="scdd_pwd" autocomplete="off" />
+										</div>
+										<div class="scdd_formSection">
+											<label class="scdd_ecard">验证码:</label>
+											<input type="text" name="code" id="scdd_yzm" autocomplete="off"/>
+											<span class="captcha"><img src="img/captcha (1).jpg"/></span>
+										</div>
+										<div class="scdd_confirm scdd_ecardBtn">
+											<div class="scdd_btn">
+												立即使用
+											</div>
+											<div class="scdd_btn scdd_cancle">
+												取消
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<ul class="scdd_moneyBox">
+							<li class="clear">
+								<label>商品件数:</label>
+								<p class="val"><span>1</span>件</p>
+							</li>
+							<li class="clear">
+								<label>商品总价:</label>
+								<p class="val"><span>1399</span>元</p>
+							</li>
+							<li class="clear">
+								<label>活动优惠:</label>
+								<p class="val"><span>-200</span>元</p>
+							</li>
+							<li class="clear">
+								<label>优惠券抵扣:</label>
+								<p class="val"><span>-0</span>元</p>
+							</li>
+							<li class="clear">
+								<label>运费:</label>
+								<p class="val"><span>10</span>元</p>
+							</li>
+							<li class="clear">
+								<label>应付总额:</label>
+								<p class="val"><span>1209</span>元</p>
+							</li>
+						</ul>
+					</div>
+					<div class="scdd_count scdd_bar clear">
+						<a href="pay.html">去结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mtk">
+			
+		</div>
+		<div class="scdd_fapiao">
+			<div class="modal_hd clear">
+				<span>发票信息</span>
+				<span class="iconfont icon-cha"></span>
+			</div>
+			<div class="modal_body">
+				<div class="in_modalbody">
+					<label class="body_label">发票类型:</label>
+					<span class="fap_btn">电子发票</span>
+					<p>电子发票是税务局认可的有效凭证，其法律效力、基本用途及使用规定同纸质发票。</p>
+				</div>
+				<div class="in_modalbody">
+					<label class="body_label">发票抬头:</label>
+					<span class="fap_btn">个人</span>
+					<span class="fap_btn">单位</span>
+					<div class="scdd_formSection">
+						<label class="scdd_code">请输入发票抬头</label>
+						<input type="text" name="fapiao" class="scdd_fapiaokk" id="scdd_fapiao" autocomplete="off" value="个人"/>
+					</div>
+					<div class="scdd_formSection title">
+						<span class="body_label">收票手机:</span>
+						<label class="scdd_code">收票人手机</label>
+						<input type="text" name="fapiao" class="scdd_fapiaokk"  autocomplete="off" value="159****6340"/>
+					</div>
+					<div class="scdd_formSection title scdd_fapiaoyx">
+						<span class="body_label">收票邮箱:</span>
+						<label class="scdd_code">收票人邮箱</label>
+						<input type="text" name="fapiao" class="scdd_fapiaokk" autocomplete="off"/>
+					</div>
+					<div class="scdd_formSection title">
+						<span class="body_label">发票内容:</span>
+						<span class="container">购买商品明细</span>
+					</div>
+					<div class="scdd_formSection title">
+						<span class="body_label xz">发票须知:</span>
+						<p class="know">1.发票金额为实际支付金额，不包含优惠券、礼品卡等；</p>
+						<p class="know">2.电子发票可以在订单完成后，在订单详情中下载和查看；</p>
+						<p class="know">3.纸质发票不与商品同时发出，商品妥投完成7日后发出，收到后请妥善保存，如退货需一同寄回。</p>
+						<p class="know">4.第三方商品的发票由相关企业单独开具。发票相关问题 ></p>
+						<p class="know"><a href="#">发票相关问题 ></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="scdd_confirm  modal_footer">
+				<div class="scdd_btn scdd_cancle">
+					取消
+				</div>
+				<div class="scdd_btn">
+					保存
+				</div>	
+			</div>
+		</div>
+		
+		
+		<div class="fixde1">
+			<div class="f1top">
+				<div class="ftopleft">
+					添加收获地址
+				</div>
+				<div class="ftopright">
+					<i class="iconfont icon-cha"></i>
+				</div>
+			</div>
+			<form>
+				<div class="f1body">
+					<div class="f1body_one">
+						<div class="f1body_one_left">
+							<label class="slname" for="sname">姓名</label>
+							<input type="text" class="sname" id="sname" autocomplete="off"/>
+						</div>
+						<div class="f1body_one_right">
+							<label class="slname" for="phone">手机号</label>
+							<input type="text" class="sname" id="phone"  autocomplete="off"/>
+						</div>
+					</div>
+					<div class="f1body_two">
+						<input class="tcity" type="text" placeholder="选择省 / 市 / 区 / 街道" />
+						<i class="iconfont icon-xiajiantou"></i>
+						<div class="checkbox">
+							<div class="checkbox_top">
+								<i class="iconfont">x</i>
+							</div>
+							<div class="qiehuan1">
+								<div class="cksearch">
+									<input class="ck_search" type="text" placeholder="输入街道、乡镇、小区或商圈名称" />
+								</div>
+								<div class="liru">
+									<p>例如： 北京华润五彩城</p>
+								</div>
+								<div class="shoudong">
+									<span>手动选择地址></span>
+								</div>
+							</div>
+							<div class="qiehuan2">
+								<div class="select_box">
+									<div class="xuanze">
+										选择省份/自治区
+									</div>
+									<div class="mar" style="position:relative;">
+										<input style="outline: none;" class="auto" type="text" data-toggle="city-picker" autocomplete="off"/>
+									</div>
+									<div class="sousuo">
+										<span>搜索地址快速定位></span>
+									</div>
+								</div>
+							</div>
+							<div class="sure">
+								<span>确定</span>
+							</div>
+						</div>
+					</div>
+					<div class="f1body_three">
+						<label class="slname" for="useradd">详细地址</label>
+						<input type="text" id="useradd" />
+					</div>
+					<div class="f1body_four">
+						<div class="f1body_one_left">
+							<label class="slname" for="bianma">邮政编码</label>
+							<input type="text" class="sname" id="bianma" />
+						</div>
+						<div class="f1body_one_right">
+							<label class="slname" for="biaoqian">地址标签</label>
+							<input type="text" class="sname" id="biaoqian" />
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="f1foot">
+				<span class="baocun">保存</span>
+				<span class="quxiao">取消</span>
+			</div>
+		</div>
+
+
+		<div class="in_footer">
+			<div class="in_containner">
+				<div class="in_footer_T">
+					<ul>
+						<li><a href="#"><i class="iconfont">&#xe618;</i>预约维修服务</a></li>
+						<li><a href="#"><i class="iconfont">&#xe613;</i>7天无理由退货</a></li>
+						<li><a href="#"><i class="iconfont">&#xe601;</i>15天免费换货</a></li>
+						<li><a href="#"><i class="iconfont">&#xe653;</i>满150元包邮</a></li>
+						<li><a href="#"><i class="iconfont">&#xe62c;</i>520余家售后网点</a></li>
+					</ul>
+				</div>
+				<div class="in_footer_B">
+					<div class="in_footer_B_L">
+						<ul>
+							<li>帮助中心</li>
+							<li><a href="#">账户管理</a></li>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="wddd.html">订单操作</a></li>
+						</ul>
+						<ul>
+							<li>服务支持</li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">自助服务</a></li>
+							<li><a href="#">相关下载</a></li>
+						</ul>
+						<ul>
+							<li>线下门店</li>
+							<li><a href="#">小米之家</a></li>
+							<li><a href="#">服务网点</a></li>
+							<li><a href="#">授权体验店</a></li>
+						</ul>
+						<ul>
+							<li>关于小米</li>
+							<li><a href="#">了解小米</a></li>
+							<li><a href="#">加入小米</a></li>
+							<li><a href="#">投资者关系</a></li>
+						</ul>
+						<ul>
+							<li>关注我们</li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">官方微信</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+						<ul>
+							<li>特色服务</li>
+							<li><a href="#">F 码通信</a></li>
+							<li><a href="#">礼物码</a></li>
+							<li><a href="#">防伪查询</a></li>
+						</ul>
+					</div>
+					<div class="in_footer_B_R">
+						<div class="in_footer_B_R1">
+							<p>400-100-5678</p>
+							<p>周一至周日 8:00-18:00<br>（仅收市话费）</p>
+							<a href="#"><i class="iconfont">&#xe620;</i>  联系客服</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="in_foot">
+			<div class="in_containner in_foot_in">
+				<div class="in_foot_ins">
+					<div class="in_foot_L">
+						<img src="img/logo-footer.png"/>
+					</div>
+					<div class="in_foot_C">
+						<p>
+							<a href="index.html">小米商城</a><span></span><a href="#">MIUI</a><span></span><a href="#">米家</a><span></span><a href="#">米聊</a><span></span><a href="#">多看</a><span></span><a href="#">游戏</a><span></span><a href="#">路由器</a><span></span><a href="#">米卡粉</a><span></span><a href="#">企业服务</a><span></span><a href="#">小米天猫城</a><span></span><a href="#">隐私政策</a><span></span><a href="#">问题反馈</a><span></span>
+							<a href="#">廉正举报</a><span></span><a href="#">Select Region</a><span></span>
+						</p>
+						<p>
+							© <a href="#">mi.com</a> 京ICP证110507号 <a href="#">京ICP备10046444号</a> <a href="#">京公网安备11010802020134号</a> <a href="#">京网文[2017]1530-131号 </a><br/>
+							<a href="#">（京）网械平台备字（2018）第00005号</a> <a href="#">互联网药品信息服务资格证 (京) -非经营性-2014-0090 </a> <a href="#">营业执照 </a><br/>
+							违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+						
+					</div>
+					<div class="in_foot_R">
+						<img src="img/truste.png"/>
+						<img src="img/v-logo-1.png"/>
+						<img src="img/v-logo-2.png"/>
+						<img src="img/v-logo-3.png"/>
+						<img src="img/ba10428a4f9495ac310fd0b5e0cf8370.png"/>
+					</div>
+				</div>
+				<div class="in_foot_txt">
+					
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/scdd.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
+ 

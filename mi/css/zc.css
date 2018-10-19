@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+	  font-size: 14px;
+    font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.zc {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  color: #666;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+.zc_contain {
+  background: #fff;
+  padding: 0 34px 30px 34px ;
+  width: 786px;
+  margin: 80px auto;
+}
+.zc_logo {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.zc_title > h4 {
+  color: #333;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+.zc_box{
+ width: 332px;
+ margin: 0 auto;
+ line-height: 20px;
+ padding: 30px 0;
+ 
+}
+.zc_normal{
+	padding-bottom: 5px;
+  color: #333;
+  font-weight: normal;
+}
+.zc_regions{
+	height: 40px;
+	padding-left: 14px;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #e8e8e8;
+	color: #555;
+	cursor: pointer;
+}
+.zc_country{
+	float: left;
+	width: 275px;
+	border-right: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.zc_drop{
+	width: 16px;
+	height: 16px;
+	margin: 11px 12px 0 12px;
+	float: left;
+	background: url(../img/icon_user.png) no-repeat ;
+}
+.zc_tip_text{
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+.zc_phone{
+	padding-bottom: 5px;
+	color: #333;
+	font-weight: normal;
+
+	
+}.zc_number{
+	border: 1px solid #e8e8e8;
+	border-left: 1px solid #e8e8e8;
+	height: 40px;
+	margin-bottom: 15px;
+
+}
+.zc_text{
+	    float: left;
+	    display: block;
+	    
+}
+.zc_down{
+	  float: left;
+    margin: 17px 0 0 10px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9d9d9d transparent transparent transparent;
+}
+.zc_number_header{
+	width: 54px;
+	height: 40px;
+	padding: 0 9px;
+	float: left;
+	line-height: 40px;
+
+
+}
+.zc_inp{
+	height: 20px;
+	width:237px;
+	padding: 10px;
+	float: left;
+	display: block;
+	border: none;
+	outline: none;
+}
+.zc_icon_error{
+	  width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icon_user.png) 14px 0px;
+}
+.zc_alert span{
+	  line-height: 20px;
+    font-size: 14px;
+    color: #f66;
+}
+.zc_alert2{
+	padding-top: 10px;
+}
+.zc_btn{
+	background-color: #ff6700;
+  	border: 1px solid rgba(186,186,186,0.3);
+  	border: 0 none;
+  	width: 330px;
+	height: 42px;
+	margin: 0 auto;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	display: block;
+	cursor: pointer;
+	margin-top: 15px;
+	color: white;
+	outline: none;
+}
+.zc_btn:hover{
+	background: #ff936a;
+}
+.zc_iconselect1{
+	width: 17px;
+	height: 20px;
+	background: url(../img/icon_user.png) -16px 0px no-repeat;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+}
+.zc_iconselect2{
+	width: 17px;
+	height: 20px;
+	background: url(../img/icon_user.png) 0px 0px no-repeat;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+}
+.zc_privacy{
+	text-align: center;
+}
+.zc_privacy a{
+	color: #333;
+	font-weight: bold;
+}
+.zc_footer_ul{
+	text-align: center;
+}
+.zc_footer_ul li{
+	display: inline-block;
+	
+	
+}
+.zc_footer_ul li a{
+	color:  #757575;
+	padding: 0 10px;
+}
+.zc_footer_ul li:nth-child(1) a{
+	color: #000;
+	
+}
+.zc_footer_ul li a:hover{
+	color: #000;
+}
+.zc_foot{
+	text-align: center;
+	padding: 10px;
+}

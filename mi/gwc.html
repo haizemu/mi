@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/gwc.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/base.min.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/less_gwc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gwc_iconfont.css"/>
+	</head>
+	<body>
+		<div class="gwc_mtk clear">
+			<div class="gwc_modal-bd">
+				<span class="gwc_cuowu1 gwc_close"><i class="iconfont icon-cuowu" style="font-size: 23px;"></i></span>
+				<h3>确定要删除吗？</h3>
+				
+				<div class="gwc_actions">
+					<button class="gwc_quxiao">取消</button>
+					<button class="gwc_queding">确定</button>
+				</div>
+			</div>
+			
+		</div>
+		<!--header-->
+		<div class="gwc_header">
+			<div class="gwc_middle clear">
+				
+			<div class="gwc_header_logo">
+					<a href="index.html"  class="gwc_logo"><img src="img/mi-home.png"/><img src="img/mi-logo.png"/></a>
+			</div>
+			<div class="gwc_header-title">
+				<h2>我的购物车</h2>
+				<p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+			</div>
+			<div class="gwc_topbar-info">
+				<span class="gwc_user"><a href="index_grzx.html">灯晃 <i class="iconfont icon-xiajiantou"></i></a>
+					<ul class="gwc_user_menu ">
+						<li><a href="index_grzx.html">个人中心</a></li>
+						<li><a href="#">评价晒单</a></li>
+						<li><a href="#">我的喜欢</a></li>
+						<li><a href="#">小米账户</a></li>
+						<li><a href="login.html">退出登录</a></li>
+					</ul>
+				</span>
+				<span class="gwc_order"><a href="wddd.html">我的订单</a></span>
+			</div>
+			</div>
+		</div>
+		<!--结算列表-->
+		<div class="gwc_page_main">
+			<div class="gwc_container">
+				<div class="gwc_list">
+					<form action="" method="post" id="gwc_form_list">
+					<div class="gwc_list_head clear">
+						<div class="gwc_cheack">
+							<input type="checkbox" name="All_cheack" id="All_cheack"/>
+							<span class="gwc_total_selection">全选</span>
+						</div>
+						<div class="gwc_img">
+							
+						</div>
+						<div class="gwc_commodity_name">
+							<span>商品名称</span>
+						</div>
+						<div class="gwc_price">
+							<span>单价</span>
+						</div>
+						<div class="gwc_num">
+							<span>数量</span>
+						</div>
+						<div class="gwc_total">
+							<span>小计</span>
+						</div>
+						<div class="gwc_action">
+							<span>操作</span>
+						</div>
+					</div>
+					
+					<div class="gwc_list_show">
+						<div class="gwc_list_head clear">
+						<div class="gwc_cheack">
+							<input type="checkbox" name="cheack" id="cheack"/>
+							
+						</div>
+						<div class="gwc_img">
+							<img src="img/pms_1513864376.45999722!80x80.jpg"/>
+						</div>
+						<div class="gwc_commodity_name">
+							<span><a href="#">知吾煮汤锅 米家定制</a></span>
+						</div>
+						<div class="gwc_price">
+							<span>99元</span>
+						</div>
+						<div class="gwc_num">
+							<div class="gwc_change_num clear">
+								<span><i class="iconfont icon-jianhao " style="font-size: 20px;"></i></span>
+								<span >1</span>
+								<span><i class="iconfont icon-jiahao" style="font-size: 20px;"></i></span>
+							</div>
+						</div>
+						<div class="gwc_total">
+							<span>99元</span>
+						</div>
+						<div class="gwc_action">
+							<span class="gwc_cuowu"><i class="iconfont icon-cuowu" style="font-size: 20px; "></i></span>
+						</div>
+					</div>
+					</div>
+					
+					<div class="gwc_list_show">
+						<div class="gwc_list_head clear">
+						<div class="gwc_cheack">
+							<input type="checkbox" name="cheack" id="cheack"/>
+						</div>
+						<div class="gwc_img">
+							<img src="img/pms_1536653482.78091231!140x140.jpg"/>
+						</div>
+						<div class="gwc_commodity_name">
+							<span><a href="#">小米平板4 8英寸WIFI版 3GB内存 黑色 32GB</a></span>
+						</div>
+						<div class="gwc_price">
+							<span>1099元</span>
+						</div>
+						<div class="gwc_num">
+							<div class="gwc_change_num clear">
+								<span><i class="iconfont icon-jianhao " style="font-size: 20px;"></i></span>
+								<span>1</span>
+								<span><i class="iconfont icon-jiahao" style="font-size: 20px;"></i></span>
+							</div>
+						</div>
+						<div class="gwc_total">
+							<span>1099元</span>
+						</div>
+						<div class="gwc_action">
+							<span class="gwc_cuowu"><i class="iconfont icon-cuowu" style="font-size: 18px;"></i></span>
+						</div>
+					</div>
+					</div>
+					
+					</form>
+				</div>
+				
+				<div class="gwc_clearfix clear">
+						<div class="gwc_clearfix_left fl">
+							<span class="gwc_continue">继续购物</span>
+							<p class="gwc_cart-total">共<span id="gwc_num1">2</span>件商品,已选择<span id="gwc_num2">0</span>件</p>
+						</div>
+						<div class="gwc_clearfix_right fr">
+							<span class="gwc_total_price">
+								合计:<span id="gwc_total">0</span>元
+							</span>
+							<div class="gwc_btn" id="btn">
+								去结算
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="gwc_cart_recommend">
+						<h2><span>买购物车中商品的人还买了</span></h2>
+						<ul class="gwc_row">
+							<li class="gwc_recommend_list" >
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1528718738.78643039!140x140.jpg"/></dt>
+									<dd>红米6 全网通版 3GB内存 32GB</dd>
+									<dd>769元</dd>
+									<dd>3616人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1478678718.61531371!140x140.jpg"/></dt>
+									<dd>米家IH电饭煲 3L</dd>
+									<dd>399元</dd>
+									<dd>1.8万人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1536833428.43292402!140x140.jpg"/></dt>
+									<dd>小米手环3 NFC版</dd>
+									<dd>199元</dd>
+									<dd>4643人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1517399998.788493!140x140.jpg"/></dt>
+									<dd>小米USB-C数据线 编织线版...</dd>
+									<dd>19.9元</dd>
+									<dd>4298人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1537323963.1278763!140x140.jpg"/></dt>
+									<dd>小米8 青春 全网通版 4GB内存</dd>
+									<dd>1399元</dd>
+									<dd>3675人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list" >
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1506393991.60537642!140x140.jpg"/></dt>
+									<dd>小米USB Type C快速充电数</dd>
+									<dd>16.9元</dd>
+									<dd>1.4万人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1527648843.24091729!140x140.png"/></dt>
+									<dd>小米米家后视镜行车记录仪</dd>
+									<dd>399元</dd>
+									<dd>673人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1528772931.13217597!140x140.jpg"/></dt>
+									<dd>小米米家后视镜行车记录仪</dd>
+									<dd>399元</dd>
+									<dd>673人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1521784952.67735645!140x140.jpg"/></dt>
+									<dd>小米USB充电器36W快充版</dd>
+									<dd>59元</dd>
+									<dd>1394人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+							
+							<li class="gwc_recommend_list">
+								<div class="gwc_succes">成功加入购物车</div>
+								<dl>
+									<dt><img src="img/pms_1525317107.95571913!140x140.jpg"/></dt>
+									<dd>小米净水器滤芯 前置活性炭</dd>
+									<dd>69元</dd>
+									<dd>1.1万人好评
+									<div class="gwc_add">
+										加入购物车
+									</div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+			</div>
+			
+			<div class="personalpage-footer">
+			<div class="personalpage-container">
+				<div class="personalpage-footer-service">
+					<ul class="personalpage-list-service">
+						<li><a href="####"><i class="iconfont icon-gongju"></i>预约维修服务</a></li>
+						<li><a href="####"><i class="iconfont icon-7tianwuliyoutuihuo"></i>7天无理由退货</a></li>
+						<li><a href="####"><i class="iconfont icon-15tianwuliyoutuihuo"></i>15天免费换货</a></li>
+						<li><a href="####"><i class="iconfont icon-liwu"></i>满150元包邮</a></li>
+						<li><a href="####"><i class="iconfont icon-dingwei"></i>520余家售后网点</a></li>
+					</ul>
+				</div>
+				<div class="personalpage-footer-links">
+					<div class="personalpage-footer-links-right">
+						<p class="personalpage-footer-phone">400-100-5678</p>
+						<p class="personalpage-foote-time">
+ 							周一至周日 8:00-18:00<br/>（仅收市话费）
+						</p>	
+						<a href="####" class="">联系客服</a>
+					</div>
+					<div class="personalpage-footer-links-left">
+						<dl>
+							<dt>帮助中心</dt>
+							<dd><a href="####">财户管理</a></dd>
+							<dd><a href="####">购物指南</a></dd>
+							<dd><a href="####">订单操作</a></dd>
+						</dl>
+						<dl>
+							<dt>服务支持</dt>
+							<dd><a href="####">售后政策</a></dd>
+							<dd><a href="####">自由服务</a></dd>
+							<dd><a href="####">相关下载</a></dd>
+						</dl>
+						<dl>
+							<dt>线下门店</dt>
+							<dd><a href="####">小米之家</a></dd>
+							<dd><a href="####">服务网络</a></dd>
+							<dd><a href="####">授权体验店</a></dd>
+						</dl>
+						<dl>
+							<dt>关于小米</dt>
+							<dd><a href="####">了解小米</a></dd>
+							<dd><a href="####">加入小米</a></dd>
+							<dd><a href="####">投资者关系</a></dd>
+						</dl>
+						<dl>
+							<dt>关注我们</dt>
+							<dd><a href="####">新浪微博</a></dd>
+							<dd><a href="####">官方微信</a></dd>
+							<dd><a href="####">联系我们</a></dd>
+						</dl>
+						<dl>
+							<dt>特色服务</dt>
+							<dd><a href="####">F码通道</a></dd>
+							<dd><a href="####">礼物码</a></dd>
+							<dd><a href="####">防伪查询</a></dd>
+						</dl>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="personalpage-info">
+			<div class="personalpage-container">
+				<div class="personalpage-info-logo"></div>
+				<div class="personalpage-info-text">
+					<p class="personalpage-sites">
+						<a href="####">小米商城</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">MIUI</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">米家</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">米聊</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">多看</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">游戏</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">路由器</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">米粉卡</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">政企服务</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">小米天猫店</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">隐私政策</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">问题反馈</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">廉政举报</a>
+						<span class="personalpage-sep">|</span>
+						<a href="####">Select Region</a>
+					</p>
+					<p class="personalpage-sites-last">
+						©<a href="####">mi.com</a>京ICP证110507号
+						<a href="####">京ICP备10046444号</a>
+						<a href="####">京公网安备11010802020134号 </a>
+						<a href="####">京网文[2017]1530-131号 </a><br />
+						<a href="####">（京）网械平台备字（2018）第00005号 </a>
+						<a href="####">互联网药品信息服务资格证 (京) -非经营性-2014-0090</a>
+						<a href="####">营业执照</a><br />
+						违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						
+					</p>
+				</div>
+				<div class="personalpage-info-links">
+					<a href="####"><img src="img/truste.png"/ style="width: 85px; height: 28px;"></a>
+					<a href="####"><img src="img/v-logo-2.png"/></a>
+					<a href="####"><img src="img/v-logo-1.png"/></a>
+					<a href="####"><img src="img/v-logo-3.png"/></a>
+					<a href="####"><img src="img/ba10428a4f9495ac310fd0b5e0cf8370.png"/></a>
+					
+				</div>
+			</div>
+			<div class="personalpage-slogan"></div>
+		</div>
+		</div>
+		
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gwc.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
